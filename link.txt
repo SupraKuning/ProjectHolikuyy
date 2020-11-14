@@ -1,0 +1,11 @@
+home page file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/1%20Homepage.html
+rajaa ampat file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/2%20Liburan%20Kuyy.html
+tur gude file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/3%20Tour%20Guide.html
+nginep file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/4%20Nginap%20Kuyy.html
+capute file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/5%20Capture%20Kuyy.html
+nabung file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/6%20Nabung%20Kuyy.html
+pesen tiket file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/7%20Pesen%20Tiket%20Kuyy.html
+checkout file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/8%20Checkout.html
+holidaay kuyy file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/9%20Checkout%20Holdaykuyy.html
+sign up file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/10%20Signup.html
+login file:///C:/Users/Hp/Documents/SEMESTER%203/PWEB/HOLIKUYY/11%20Login.html
