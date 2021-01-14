@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS PWEB MOCKUP</title>
+	<style type="text/css">
+	.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 80%;
+  border-color: blue
+}
+		body {
+			background-image: url(jamet.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+
+		label {
+			margin-left: 15px;
+		}
+				input[type=text] {
+			width: 56%;
+			padding: 12px 20px;
+			margin: 12px;
+			border: none;
+			border-bottom: 2px solid blue;
+		}
+
+		
+		input[type=button] {
+
+			padding: 12px 20px;
+			margin: 12px;
+			
+		}
+		input[type=reset]{
+			padding: 12px 20px;
+			margin: 12px;
+			
+		}
+		table {
+			width: 80%;
+			padding-left: 200px;
+		}
+
+		tr:hover {
+			background-color:#00aaff
+;
+		}
+
+		textarea {
+			background-color: #ebebe0;
+			padding: 12px 20px;
+			margin: 8px;
+			height: 150px;
+			border: 2px solid #d6d6c2;
+			resize: none;
+			width: 60%;
+			box-sizing: border-box; 
+		}
+	</style>
+
+</head>
+<body >
+	<script>
+		function formtext(tugas) {
+	var Nama =(document.tugas.Nama.value);
+	var Nim =(document.tugas.NIM.value);
+	var ket ="";
+	var select = document.tugas.Agama.value;
+	var status ="";
+	var prodi =""
+	var area = document.tugas.essay.value
+	
+//form status
+	if (document.tugas.Kawin.checked == true) {
+		status = "Kawin";
+	}else if (document.tugas.Belum_Kawin.checked == true) {
+		status = "Belum Menikah";
+	}else {
+		status = "";
+	}
+//form jenis kelmain
+	if (tugas.gender.value == "Pria")
+	{
+		ket = "Pria";
+	} 
+	else if (tugas.gender.value == "Wanita"){
+		ket = "Wanita";
+	}
+	
+		else 
+		{
+			ket=""
+		}
+	
+//form prodi
+	if (document.tugas.TIF.checked == true) {
+		prodi = "TIF";
+	}else if (document.tugas.TKK.checked == true) {
+		prodi = "TKK";
+	}else if (document.tugas.MIF.checeked == true) {
+		prodi = "MIF"
+	}else if (document.tugas.TIF_INTER.checked == true) {
+		prodi = "TIF INTER"
+	}
+
+
+	document.tugas.namaout.value = Nama ;
+	document.tugas.NIMout.value = Nim ;
+	document.tugas.jkout.value = ket
+	document.tugas.Agamaout.value = select;
+	document.tugas.Statusout.value = status 
+	document.tugas.Studiout.value =prodi
+	document.tugas.Catatanout.value = area
+}
+
+
+	</script>
+	<center>
+
+<form name="tugas">
+	<table>
+		
+		<h2 style="color: white">Registrasi Holikuyy</h2>
+		<img src="lass.png" alt="Avatar" class="avatar">
+		<hr width="1000" align="center" color='blue'></hr> 
+		<tr>
+			<td style="color: white">Nama:</td>
+			<td><input type="text" name="Nama" maxlength="25" placeholder="masukan Nama"></td>
+		</tr>
+
+		<tr>
+			<td style="color: white">NIM:</td>
+			<td><input type="text" name="NIM" maxlength="9" placeholder="masukan NIM"></td><br>
+		</tr>
+      	<tr>
+			<td style="color: white">Jenis Kelamin :</td>
+			<td style="color: white"><input type="radio" name="gender" value="Pria">Pria
+			<input type="radio" name="gender" value="Wanita">Wanita</td>
+		</tr>
+		<tr>
+			<td style="color: white">Agama :</td>
+			<td style="color: white"><select name ="Agama" size="1">
+				<option value=""> pilih agama </option>
+				<option value="Islam"> Islam</option>
+				<option value="Katholik"> Katholik</option>
+				<option value="Buddha"> Buddha</option>
+				<option value="Kristen"> Kristen</option>
+				<option value="Hindu"> Hindu </option>
+				<option value="Kong Hu Chu"> Kong Hu Chu</option>
+			</select></td><br>
+		</tr>
+		<tr>
+			<td style="color: white">Status :</td>
+			<td style="color: white"><input type="checkbox" value="on" name="Kawin">Kawin
+				<input type="checkbox" value="on" name="Belum_Kawin">Belum Kawin</td>
+		</tr>
+		<tr>
+			<td style="color: white">Program Studi:</td>
+			<td style="color: white"> <input type="checkbox" value="on" name="TIF">TIF
+				<input type="checkbox" value="on" name="TKK">TKK
+				<input type="checkbox" value="on" name="MIF">MIF
+				<input type="checkbox" value="on" name="TIF_INTER">TIF INTER</td>
+		</tr>
+		<tr>
+			<td style="color: white">Catatan</td>
+			<td style="color: white"><textarea name="essay" rows="5" cols="15" placeholder="isi jika ada saran"></textarea></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Submit" onclick="formtext(tugas)">
+				<input type="reset" value="Reset" ></td>
+		</tr>
+		<tr>
+			<td style="color: white"><h3>HASIL INPUTAN :</h3></td>
+		</tr>
+		<tr>
+			<td style="color: white">Nama :</td>
+			<td style="color: white"><input type="text" name="namaout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">NIM :</td>
+			<td style="color: white"><input type="text" name="NIMout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">Jenis Kelamin :</td>
+			<td style="color: white"><input type="text" name="jkout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">Agama</td>
+			<td style="color: white"><input type="text" name="Agamaout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">Status :</td>
+			<td style="color: white"><input type="text" name="Statusout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">Program Studi :</td>
+			<td style="color: white"><input type="text" name="Studiout"></td>
+		</tr>
+		<tr>
+			<td style="color: white">Catatan :</td>
+			<td style="color: white"><textarea name="Catatanout" rows="5" cols="15" ></td>
+		</tr>	
+		
+		
+
+	</form>
+
+</body>
+
+</html>

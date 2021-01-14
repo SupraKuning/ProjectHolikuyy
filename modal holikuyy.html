@@ -71,7 +71,6 @@
         }
 
         .forma input {
-
             height: 35px;
             width: 260px;
             padding: 0 10px;
@@ -95,14 +94,14 @@
 </head>
 <body>
     
-<button id="popuplogin">Login</button>
+<button id="myBtn">Login</button>
 
 <div id="myModal" class="Modal">
     <div class="isiModal">
         <div style="text-align: center; margin-top: 100px; margin-bottom: 30px;">
         <h2 style="color: black;">Login Account</h2>
         <form style="text-align: center; background-color: white;">
-            <a><img src="jamet.jpg" alt="profile" width="100px" height="100px" style="border-radius: 50px;" ></a>
+            <a><img src="jamet.jpg" alt="profile" width="100px" height="100px" style="border-radius: 50%;"></a>
             <div class="forma">
                 <p style="color: black;">Email</p>
                 <input type="text" style="background-color: #dddddd;">
@@ -126,7 +125,7 @@
 </body>
 <script>
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("popuplogin");
+    var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("masuk")[0];
 
     btn.onclick = function() {
@@ -141,6 +140,6 @@
     if (event.target == modal) {
     modal.style.display = "none";
     }
-       }
+        }
 </script>
 </html>
